@@ -1,0 +1,35 @@
+{
+  "name": "mirite/formatting",
+  "version": "0.0.1",
+  "description": "Shared formatting settings for PHP CS Fixer. Used as an enhancement for the WordPress PHPCS standard.",
+  "type": "library",
+  "require": {
+    "friendsofphp/php-cs-fixer": "^3.75"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Mirite\\Formatting\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jesse Conner",
+      "email": "me@jesseconner.ca"
+    }
+  ],
+  "scripts": {
+    "format": "php-cs-fixer fix",
+    "lint": "phpcs ./src --standard=phpcs.xml"
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^3.1",
+    "squizlabs/php_codesniffer": "^3.13",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
