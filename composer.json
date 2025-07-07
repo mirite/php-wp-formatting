@@ -1,6 +1,5 @@
 {
   "name": "mirite/formatting",
-  "version": "0.0.2",
   "description": "Shared formatting settings for PHP CS Fixer. Used as an enhancement for the WordPress PHPCS standard.",
   "type": "library",
   "require": {
